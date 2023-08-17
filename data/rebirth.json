@@ -1,0 +1,403 @@
+{
+  "2016": {
+    "January": {
+      "astromon": "---",
+      "status": ""
+    },
+    "February": {
+      "astromon": "---",
+      "status": ""
+    },
+    "March": {
+      "astromon": "---",
+      "status": ""
+    },
+    "April": {
+      "astromon": "---",
+      "status": ""
+    },
+    "May": {
+      "astromon": "---",
+      "status": ""
+    },
+    "June": {
+      "astromon": "---",
+      "status": ""
+    },
+    "July": {
+      "astromon": "---",
+      "status": ""
+    },
+    "August": {
+      "astromon": "---",
+      "status": ""
+    },
+    "September": {
+      "astromon": "Miho",
+      "status": ""
+    },
+    "October": {
+      "astromon": "Seastar",
+      "status": ""
+    },
+    "November": {
+      "astromon": "Hunter",
+      "status": ""
+    },
+    "December": {
+      "astromon": "Miho",
+      "status": "& Victoria (L/D)"
+    }
+  },
+  "2017": {
+    "January": {
+      "astromon": "Jellai",
+      "status": ""
+    },
+    "February": {
+      "astromon": "Mona",
+      "status": ""
+    },
+    "March": {
+      "astromon": "Medusa",
+      "status": ""
+    },
+    "April": {
+      "astromon": "Monkiki",
+      "status": "& Seastar (L/D)"
+    },
+    "May": {
+      "astromon": "Hunter",
+      "status": "& Victoria (L/D)"
+    },
+    "June": {
+      "astromon": "Cocomaru",
+      "status": ""
+    },
+    "July": {
+      "astromon": "Phibian",
+      "status": ""
+    },
+    "August": {
+      "astromon": "Latt",
+      "status": "& Otari (L/D)"
+    },
+    "September": {
+      "astromon": "Radis",
+      "status": ""
+    },
+    "October": {
+      "astromon": "Birdie",
+      "status": "& Miho (L/D)"
+    },
+    "November": {
+      "astromon": "Yeti",
+      "status": ""
+    },
+    "December": {
+      "astromon": "Seedler",
+      "status": ""
+    }
+  },
+  "2018": {
+    "January": {
+      "astromon": "Fennec",
+      "status": ""
+    },
+    "February": {
+      "astromon": "Kiki",
+      "status": ""
+    },
+    "March": {
+      "astromon": "Misha",
+      "status": ""
+    },
+    "April": {
+      "astromon": "Seastar",
+      "status": ""
+    },
+    "May": {
+      "astromon": "Mowgli",
+      "status": ""
+    },
+    "June": {
+      "astromon": "Ramu",
+      "status": ""
+    },
+    "July": {
+      "astromon": "Phibian",
+      "status": ""
+    },
+    "August": {
+      "astromon": "Bulbie",
+      "status": ""
+    },
+    "September": {
+      "astromon": "Sand Wraith",
+      "status": ""
+    },
+    "October": {
+      "astromon": "Hunter",
+      "status": ""
+    },
+    "November": {
+      "astromon": "Birdie",
+      "status": ""
+    },
+    "December": {
+      "astromon": "Yeti",
+      "status": ""
+    }
+  },
+  "2019": {
+    "January": {
+      "astromon": "Fennec",
+      "status": ""
+    },
+    "February": {
+      "astromon": "Kiki",
+      "status": ""
+    },
+    "March": {
+      "astromon": "Misha",
+      "status": ""
+    },
+    "April": {
+      "astromon": "Phibian",
+      "status": ""
+    },
+    "May": {
+      "astromon": "Bulbie",
+      "status": "& Miho (L/D)"
+    },
+    "June": {
+      "astromon": "Seastar",
+      "status": ""
+    },
+    "July": {
+      "astromon": "Seedler",
+      "status": ""
+    },
+    "August": {
+      "astromon": "Sand Wraith",
+      "status": ""
+    },
+    "September": {
+      "astromon": "Jellai",
+      "status": "& Fennec (L/D)"
+    },
+    "October": {
+      "astromon": "Mowgli",
+      "status": ""
+    },
+    "November": {
+      "astromon": "Yeti",
+      "status": "& Miho (L/D)"
+    },
+    "December": {
+      "astromon": "Bulbie",
+      "status": ""
+    }
+  },
+  "2020": {
+    "January": {
+      "astromon": "Latt",
+      "status": "& Mona (L/D)"
+    },
+    "February": {
+      "astromon": "Radis",
+      "status": ""
+    },
+    "March": {
+      "astromon": "Phibian",
+      "status": "& Seastar (L/D)"
+    },
+    "April": {
+      "astromon": "Kiki",
+      "status": ""
+    },
+    "May": {
+      "astromon": "Birdie",
+      "status": "& Cocomaru (L/D)"
+    },
+    "June": {
+      "astromon": "Seedler",
+      "status": ""
+    },
+    "July": {
+      "astromon": "Misha",
+      "status": "& Monkiki (L/D)"
+    },
+    "August": {
+      "astromon": "Sand Wraith",
+      "status": ""
+    },
+    "September": {
+      "astromon": "Jellai",
+      "status": "& Fennec (L/D)"
+    },
+    "October": {
+      "astromon": "Mowgli",
+      "status": ""
+    },
+    "November": {
+      "astromon": "Yeti",
+      "status": "& Miho (L/D)"
+    },
+    "December": {
+      "astromon": "Bulbie",
+      "status": ""
+    }
+  },
+  "2021": {
+    "January": {
+      "astromon": "Phibian",
+      "status": "& Seastar (L/D)"
+    },
+    "February": {
+      "astromon": "Beth",
+      "status": ""
+    },
+    "March": {
+      "astromon": "Shellie",
+      "status": ""
+    },
+    "April": {
+      "astromon": "Latt",
+      "status": "& Mona (L/D)"
+    },
+    "May": {
+      "astromon": "Radis",
+      "status": ""
+    },
+    "June": {
+      "astromon": "Candling",
+      "status": ""
+    },
+    "July": {
+      "astromon": "Bulbie",
+      "status": "& Miho (L/D)"
+    },
+    "August": {
+      "astromon": "Seastar",
+      "status": ""
+    },
+    "September": {
+      "astromon": "Jellai",
+      "status": "& Fennec (L/D)"
+    },
+    "October": {
+      "astromon": "Beth",
+      "status": ""
+    },
+    "November": {
+      "astromon": "Crowhook",
+      "status": ""
+    },
+    "December": {
+      "astromon": "Seedler",
+      "status": ""
+    }
+  },
+  "2022": {
+    "January": {
+      "astromon": "Shellie",
+      "status": ""
+    },
+    "February": {
+      "astromon": "Seastar",
+      "status": ""
+    },
+    "March": {
+      "astromon": "Latt",
+      "status": "& Mona (L/D)"
+    },
+    "April": {
+      "astromon": "Kiki",
+      "status": ""
+    },
+    "May": {
+      "astromon": "Sand Wraith",
+      "status": ""
+    },
+    "June": {
+      "astromon": "Candling",
+      "status": ""
+    },
+    "July": {
+      "astromon": "Crowhook",
+      "status": ""
+    },
+    "August": {
+      "astromon": "Beth",
+      "status": ""
+    },
+    "September": {
+      "astromon": "Jellai",
+      "status": "& Fennec (L/D)"
+    },
+    "October": {
+      "astromon": "Bulbie",
+      "status": "& Miho (L/D)"
+    },
+    "November": {
+      "astromon": "Seedler",
+      "status": ""
+    },
+    "December": {
+      "astromon": "Latt",
+      "status": "& Mona (L/D)"
+    }
+  },
+  "2023": {
+    "January": {
+      "astromon": "Shellie",
+      "status": ""
+    },
+    "February": {
+      "astromon": "Phibian",
+      "status": "& Seastar (L/D)"
+    },
+    "March": {
+      "astromon": "Candling",
+      "status": ""
+    },
+    "April": {
+      "astromon": "Radis",
+      "status": ""
+    },
+    "May": {
+      "astromon": "Jellai",
+      "status": "& Fennec (L/D)"
+    },
+    "June": {
+      "astromon": "Crowhook",
+      "status": ""
+    },
+    "July": {
+      "astromon": "Beth",
+      "status": ""
+    },
+    "August": {
+      "astromon": "Shellie",
+      "status": ""
+    },
+    "September": {
+      "astromon": "",
+      "status": ""
+    },
+    "October": {
+      "astromon": "",
+      "status": ""
+    },
+    "November": {
+      "astromon": "",
+      "status": ""
+    },
+    "December": {
+      "astromon": "",
+      "status": ""
+    }
+  },
+  "thanks" : "Thanks to Francinnamon for making this list!"
+}

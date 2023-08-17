@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <body>
+    
+    <div id="export">
+      <table>
+        <tr>
+          <th></th>
+          <th>Base</th>
+          <th>Bonus</th>
+        </tr>
+        <tr>
+          <th>HP</th>
+          <th><input type="number" id="base-hp" placeholder="ex. 10000"></th>
+          <th><input type="number" id="bonus-hp" placeholder="ex. 10000"></th>
+        </tr>
+        <tr>
+          <th>Defence</th>
+          <th><input type="number" id="base-def" placeholder="ex. 1000"></th>
+          <th><input type="number" id="bonus-def" placeholder="ex. 1000"></th>
+        </tr>
+
+        <tr>
+          <th></th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <th>Leader Skill</th>
+          <th>
+            <select id="lead-type-d">
+              <option value="hp">Grace of Life (+HP)</option>
+              <option value="atk">Fighting Spirit (+Atk)</option>
+              <option value="def">Protector's Shield (+Def)</option>
+              <option value="rec">Surging Vitality (+Rec)</option>              
+              <option value="cd">Deathblow (+CD)</option>  
+              <option value="cr">Critical Boost (+CR)</option> 
+              <option value="res">Firm Resolve (+Res)</option>
+              <option value="natk">Defensive Stance (-Atk)</option> 
+              <option value="ndef">Charging Stance (-Def)</option>  
+              <option value="nres">Discernment (-Res)</option>
+              <option value="ncr">Crisis Aversion (-CR)</option>
+            </select> 
+          </th>
+          <th><input type="number" id="lead-value-d" placeholder="0%"></th>
+        </tr>
+        <tr>
+          <th>Result</th>
+          <th id="result-ehp"></th>     
+        </tr> 
+        
+      </table>
+      
+
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <div id="export">
+    <div id="subnavigation">
+      <button onclick="document.dispatchEvent(new CustomEvent('event-load', {
+    detail: { page: 'rebirth' }
+  }));">
+        Rebirth
+      </button>
+      <button onclick="document.dispatchEvent(new CustomEvent('event-load', {
+    detail: { page: 'primo' }
+  }));">
+        Primo
+      </button>
+    </div>
+    <div class="thanks" id="thanks">
+      Many people helped me compile these tables :)
+    </div>
+    <table class="primo-legend" id="event-legend">
+      <thead>
+        <tr>
+          <th>Legend</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="primo-1">First Time</td>
+        </tr>
+        <tr>
+          <td class="primo-2">Second Time</td>
+        </tr>
+        <tr>
+          <td class="primo-3">Third Time</td>
+        </tr>
+        <tr>
+          <td class="primo-4">Fourth Time</td>
+        </tr>
+        <tr>
+          <td class="primo-5">Fifth Time</td>
+        </tr>
+        <tr>
+          <td class="primo-6">Sixth Time</td>
+        </tr>
+        <tr>
+          <td class="primo-7">Seventh Time</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</body>
+
+</html>

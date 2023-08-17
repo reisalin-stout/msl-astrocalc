@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="export">
+      <div class="astromon-screen">
+        <!-- Portrait and Astromon selection -->
+        <div id="portrait-positioning">
+          <div id="portrait" class="stack">
+            <img
+              id="portrait-base"
+              class="portrait empty"
+              src="images/items/portrait-empty.png"
+            />
+            <img
+              id="portrait-avatar"
+              class="portrait avatar unrendered"
+              src="images/icons/SuperMonaD_large.png"
+            />
+            <img
+              id="portrait-evo"
+              class="portrait evo unrendered"
+              src="images/items/portrait-evo-4.png"
+            />
+
+            <img
+              id="portrait-element"
+              class="portrait element unrendered"
+              src="images/items/portrait-element-dark.png"
+            />
+            <img
+              id="portrait-awakening"
+              class="portrait awakening unrendered"
+              src="images/items/portrait-awakening.png"
+            />
+
+            <img
+              id="portrait-level"
+              class="portrait level unrendered"
+              src="images/items/portrait-level.png"
+            />
+            <div class="detail-positioning">
+              <div id="detail-rank" class="detail-rank"></div>
+              <div id="detail-name" class="detail-name"></div>
+              <div id="detail-type" class="detail-type"></div>
+            </div>
+          </div>
+
+          <div id="list-container" class="list-container hidden">
+            <div id="list-search" class="list-search">
+              <input
+                type="text"
+                class="list-search-input"
+                placeholder="Astromon Family Name"
+                id="list-search-input"
+                onkeyup="filterFunction()"
+              />
+            </div>
+            <div class="list-wrapper" id="list-wrapper"></div>
+          </div>
+        </div>
+        <div class="stats-positioning">
+          <!-- Astromon Stats and Modifiers -->
+          <div id="stats-container" class="stats-container">
+            <table id="stats-table" class="stats-table">
+              <tbody>
+                <tr>
+                  <td class="stats-attribute">HP</td>
+                  <td class="base-value"><span id="base-hp">0</span></td>
+                  <td class="bonus-value">+<span id="bonus-hp">0</span></td>
+                </tr>
+                <tr>
+                  <td class="stats-attribute">Attack</td>
+                  <td class="base-value"><span id="base-atk">0</span></td>
+                  <td class="bonus-value">+<span id="bonus-atk">0</span></td>
+                </tr>
+                <tr>
+                  <td class="stats-attribute">Defence</td>
+                  <td class="base-value"><span id="base-def">0</span></td>
+                  <td class="bonus-value">+<span id="bonus-def">0</span></td>
+                </tr>
+                <tr>
+                  <td class="stats-attribute">Recovery</td>
+                  <td class="base-value"><span id="base-rec">0</span></td>
+                  <td class="bonus-value">+<span id="bonus-rec">0</span></td>
+                </tr>
+                <tr>
+                  <td class="stats-attribute">Crit. Dmg</td>
+                  <td class="base-value">+<span id="base-cd">0</span>%</td>
+                  <td class="bonus-value">+<span id="bonus-cd">0</span>%</td>
+                </tr>
+                <tr>
+                  <td class="stats-attribute">Crit. Rate</td>
+                  <td class="base-value">+<span id="base-cr">0</span>%</td>
+                  <td class="bonus-value">+<span id="bonus-cr">0</span>%</td>
+                </tr>
+                <tr>
+                  <td class="stats-attribute">Resist.</td>
+                  <td class="base-value"><span id="base-res">0</span>%</td>
+                  <td class="bonus-value">+<span id="bonus-res">0</span>%</td>
+                </tr>
+                <tr>
+                  <td class="stats-attribute">Crit. Resist</td>
+                  <td class="base-value"><span id="base-cre">0</span>%</td>
+                  <td class="bonus-value">+<span id="bonus-cre">0</span>%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="equip-container" class="equip-container">
+            <table
+              id="equip-table"
+              class="equip-table"
+              cellpadding="0"
+              cellspacing="0"
+            >
+              <tbody>
+                <tr class="equip-row short">
+                  <td id="equip-gem-bonus">+0%</td>
+                </tr>
+
+                <tr class="equip-row tall">
+                  <td class="equip-slot-cell">
+                    <img
+                      class="equip-slot a"
+                      src="images/equips/gem-diamond-empty.png"
+                    /><img
+                      class="equip-slot a set hidden"
+                      src="images/equips/gem-diamond-empty.png"
+                    />
+                    <img
+                      class="equip-slot b"
+                      src="images/equips/gem-triangle-empty.png"
+                    /><img
+                      class="equip-slot b set hidden"
+                      src="images/equips/gem-triangle-empty.png"
+                    />
+                    <img
+                      class="equip-slot c"
+                      src="images/equips/gem-square-empty.png"
+                    /><img
+                      class="equip-slot c set hidden"
+                      src="images/equips/gem-square-empty.png"
+                    />
+                  </td>
+                </tr>
+                <tr class="equip-row tall">
+                  <td class="equip-slot-cell">
+                    <img
+                      class="equip-slot a"
+                      src="images/equips/trinket-empty.png"
+                    /><img
+                      class="equip-slot a set hidden"
+                      src="images/equips/trinket-empty.png"
+                    />
+                    <img
+                      class="equip-slot b"
+                      src="images/equips/trinket-empty.png"
+                    /><img
+                      class="equip-slot b set hidden"
+                      src="images/equips/trinket-empty.png"
+                    />
+                    <img
+                      class="equip-slot c"
+                      src="images/equips/trinket-empty.png"
+                    /><img
+                      class="equip-slot c set hidden"
+                      src="images/equips/trinket-empty.png"
+                    />
+                  </td>
+                </tr>
+                <tr class="equip-row short">
+                  <td id="equip-trinket-bonus">+0%</td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="equip-tab" class="equip-tab">Hello good people</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

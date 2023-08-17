@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <body>
+    
+    <div id="export">
+      <table>
+        <tr>
+          <th></th>
+          <th>Base</th>
+          <th>Bonus</th>
+        </tr>
+        <tr>
+          <th>Damage Stat</th>
+          <th><input type="number" id="base-attack" placeholder="ex. 1000"></th>
+          <th><input type="number" id="bonus-attack" placeholder="ex. 1000"></th>
+        </tr>
+        <tr>
+          <th>Critical Damage</th>
+          <th><input type="number" id="base-cd" placeholder="0%"></th>
+          <th><input type="number" id="bonus-cd" placeholder="0%"></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Skills</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <th>Leader Skill</th>
+          <th>
+            <select id="lead-type">
+              <option value="hp">Grace of Life (+HP)</option>
+              <option value="atk">Fighting Spirit (+Atk)</option>
+              <option value="def">Protector's Shield (+Def)</option>
+              <option value="rec">Surging Vitality (+Rec)</option>              
+              <option value="cd">Deathblow (+CD)</option>  
+              <option value="cr">Critical Boost (+CR)</option> 
+              <option value="res">Firm Resolve (+Res)</option>
+              <option value="natk">Defensive Stance (-Atk)</option> 
+              <option value="ndef">Charging Stance (-Def)</option>  
+              <option value="nres">Discernment (-Res)</option>
+              <option value="ncr">Crisis Aversion (-CR)</option>
+            </select> 
+          </th>
+          <th><input type="number" id="lead-value" placeholder="0%"></th>
+        </tr>
+        <tr>
+          <th>Attack Skill</th>
+          <th>
+            <select id="skill-type">
+              <option value="other">Other</option>              
+              <option value="agg-hp">Aggression (HP)</option>
+              <option value="agg-def">Aggression (Def)</option>
+              <option value="hunter">Hunter</option>
+              <option value="predator">Predator</option>
+            </select>
+          </th>
+          <th><input type="number" id="skill-value" placeholder="0%"></th>
+        </tr>
+        <tr>
+          <th>Skillbook Bonus</th>
+          <th><input type="number" id="skillbook" placeholder="ex. 20%"></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Options</th>
+        </tr>
+        <tr>
+          <th>
+            <label for="advantage">Advantage/Elemental Edge</label>
+            <input type="checkbox" id="advantage" value="advantage" />
+
+          </th>
+        </tr>
+        
+        <tr>
+          <th>Result</th>
+          <th id="result-dmg"></th>
+          <th id="critical-dmg"></th>          
+        </tr> 
+        
+      </table>
+      
+
+    </div>
+    
+  </body>
+</html>

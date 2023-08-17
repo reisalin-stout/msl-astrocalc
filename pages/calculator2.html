@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="export">
+      <div class="calculator">
+        <table class="calculator-table">
+          <tr>
+            <th></th>
+            <th>----------</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>Astromon Base Stats</th>
+            <th>Bonus</th>
+          </tr>
+          <tr>
+            <th>HP</th>
+            <th><input type="number" name="base-stat" id="HP" placeholder="ex. 10000" /></th>
+            <th id="bonus-HP">0</th>           
+          </tr>
+          <tr>
+            <th>Attack</th>
+            <th>
+              <input type="number" name="base-stat" id="ATK" placeholder="ex. 1000" />
+            <th id="bonus-ATK">0</th>
+            </th>
+          </tr>
+          <tr>
+            <th>Defence</th>
+            <th>
+              <input type="number" name="base-stat" id="DEF" placeholder="ex. 1000" />
+            <th id="bonus-DEF">0</th>
+            </th>
+          </tr>
+          <tr>
+            <th>Recovery</th>
+            <th>
+              <input type="number" name="base-stat" id="REC" placeholder="ex. 1000" />
+            <th id="bonus-REC">0</th>
+            </th>
+          </tr>
+          <tr>
+            <th>Crit. Damage</th>
+            <th><input type="number" name="base-stat" id="CD" placeholder="50%" /></th>
+            <th id="bonus-CD">0</th>
+          </tr>
+          <tr>
+            <th>Crit. Rate</th>
+            <th><input type="number" name="base-stat" id="CR" placeholder="10%" /></th>
+            <th id="bonus-CR">0</th>
+          </tr>
+          <tr>
+            <th>Resist</th>
+            <th><input type="number" name="base-stat" id="RES" placeholder="0%" /></th>
+            <th id="bonus-RES">0</th>
+          </tr>
+          <tr>
+            <th>Crit. Resist</th>
+            <th><input type="number" name="base-stat" id="CRE" placeholder="0%" /></th>
+            <th id="bonus-CRE">0</th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>----------</th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>Astromon Skills</th>
+          </tr>
+          <tr>
+            <th>3* Skill</th>
+            <th>
+              <select id="3s-type">
+                <option value="other">Other</option>
+                <option value="agg-hp">Aggression (HP)</option>
+                <option value="agg-def">Aggression (Def)</option>
+                <option value="hunter">Hunter</option>
+                <option value="predator">Predator</option>
+              </select>
+            </th>
+            <th><input type="number" id="3s-value" placeholder="0%" /></th>
+          </tr>
+          <tr>
+            <th>3* Skillbook Bonus</th>
+            <th><input type="number" id="3s-book" placeholder="ex. 20%" /></th>
+          </tr>
+          <tr>
+            <th>5* Skill</th>
+            <th>
+              <select id="5s-type">
+                <option value="other">Other</option>
+                <option value="agg-hp">Aggression (HP)</option>
+                <option value="agg-def">Aggression (Def)</option>
+                <option value="hunter">Hunter</option>
+                <option value="predator">Predator</option>
+              </select>
+            </th>
+            <th><input type="number" id="5s-value" placeholder="0%" /></th>
+          </tr>
+          <tr>
+            <th>5* Skillbook Bonus</th>
+            <th><input type="number" id="5s-book" placeholder="ex. 20%" /></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>----------</th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>Team</th>
+          </tr>
+          <tr>
+            <th>Leader Skill</th>
+            <th>
+              <select id="lead-type">
+                <option value="pHP">Grace of Life (+HP)</option>
+                <option value="pATK">Fighting Spirit (+Atk)</option>
+                <option value="pDEF">Protector's Shield (+Def)</option>
+                <option value="pREC">Surging Vitality (+Rec)</option>
+                <option value="CD">Deathblow (+CD)</option>
+                <option value="CR">Critical Boost (+CR)</option>
+                <option value="RES">Firm Resolve (+Res)</option>
+                <option value="natk">Defensive Stance (-Atk)</option>
+                <option value="ndef">Charging Stance (-Def)</option>
+                <option value="nres">Discernment (-Res)</option>
+                <option value="ncr">Crisis Aversion (-CR)</option>
+              </select>
+            </th>
+            <th><input type="number" id="lead-value" placeholder="0%" /></th>
+          </tr>
+          <tr>
+            <th>Synergy</th>
+            <th>Someday :)</th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>----------</th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>Options</th>
+          </tr>
+          <tr>
+            <th>
+              <label for="advantage">Advantage/Elemental Edge</label>
+              <input type="checkbox" id="advantage" value="advantage" />
+            </th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>----------</th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th id="result-dmg"></th>
+            <th id="critical-dmg"></th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="equips">
+        <table class="equips-table">
+          <thead>
+            <tr>
+              <th>Equippables</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>Set Bonus</td>
+            </tr>
+            <tr>
+              <td>Gems</td>
+              <td id="equip-0">
+                <img
+                  class="gemslot"
+                  onclick="openSlot('gem', 0)"
+                  id="gemslot-1"
+                  src="https://cdn.glitch.global/bc445e1d-04b9-4169-8b69-5a20dd0ac015/Gemslot_Diamond_Empty.png?v=1690727498869"
+                />
+              </td>
+              <td id="gem-2">
+                <img
+                  class="gemslot"
+                  onclick="openSlot('gem', 1)"
+                  id="gemslot-2"
+                  src="https://cdn.glitch.global/bc445e1d-04b9-4169-8b69-5a20dd0ac015/Gemslot_Triangle_Empty.png?v=1690727502508"
+                />
+              </td>
+              <td id="gem-3">
+                <img
+                  class="gemslot"
+                  onclick="openSlot('gem', 2)"
+                  id="gemslot-3"
+                  src="https://cdn.glitch.global/bc445e1d-04b9-4169-8b69-5a20dd0ac015/Gemslot_Square_Empty.png?v=1690727500588"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Trinkets</td>
+              <td id="trk-1">
+                <img
+                  class="trinketslot"
+                  onclick="openSlot('trinket', 3)"
+                  id="trinket-1"
+                  src="https://cdn.glitch.global/bc445e1d-04b9-4169-8b69-5a20dd0ac015/Gemslot_Square_Empty.png?v=1690727500588"
+                />
+              </td>
+              <td id="trk-2">
+                <img
+                  class="trinketslot"
+                  onclick="openSlot('trinket', 4)"
+                  id="trinket-2"
+                  src="https://cdn.glitch.global/bc445e1d-04b9-4169-8b69-5a20dd0ac015/Gemslot_Square_Empty.png?v=1690727500588"
+                />
+              </td>
+              <td id="trk3">
+                <img
+                  class="trinketslot"
+                  onclick="openSlot('trinket', 5)"
+                  id="trinket-3"
+                  src="https://cdn.glitch.global/bc445e1d-04b9-4169-8b69-5a20dd0ac015/Gemslot_Square_Empty.png?v=1690727500588"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="equip-detail collapsed" id="equip-detail">
+          <!-- Gem and Trinket Panels -->
+    <table>
+      <tr id="form">
+        <th>Form</th>
+        <th colspan="2">          
+          <select id="gem-form"  style="width:200px">
+            <option value="square">Square</option>
+            <option value="diamond">Diamond</option>
+            <option value="triangle">Triangle</option>
+          </select>
+        </th>
+      </tr>
+      <tr id="colour">
+        <th>Type</th>
+        <th colspan="2">          
+          <select id="gem-colour"  style="width:200px">
+            <option value="tenacity">Tenacity</option>
+            <option value="fortitude">Fortitude</option>
+            <option value="ferocity">Ferocity</option>
+            <option value="healing">Healing</option>
+            <option value="conviction">Conviction</option>
+            <option value="protection">Protection</option>
+            <option value="life">Life</option>
+            <option value="valor">Recovery</option>
+            <option value="vitality">Vitality</option>
+            <option value="ruin">Ruin</option>
+            <option value="intuition">Intuition</option>
+          </select>
+        </th>
+      </tr>
+      <tr id="excl">
+        <th colspan="2">Exclusive Trinket <input type="checkbox" id="exclusive"></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>Stat</th>
+        <th>Value</th>
+      </tr>
+      <tr id="main">
+        <th>Main</th>
+        <th>
+          <select name="update-substat" id="main-select">
+            <option value="void">---</option>
+            <option value="pHP">HP %</option>
+            <option value="fHP">HP +</option>
+            <option value="pATK">Attack %</option>
+            <option value="fATK">Attack +</option>
+            <option value="pDEF">Defence %</option>
+            <option value="fDEF">Defence +</option>
+            <option value="pREC">Recovery %</option>
+            <option value="fREC">Recovery +</option>
+            <option value="bCD">Crit. Damage</option>
+            <option value="bCR">Crit. Rate</option>
+            <option value="bRES">Resist</option>
+            <option disabled value="bCRE">Crit. Resist</option>  
+          </select>
+        </th>
+        <th><input name="update-substat" type="number" id="main-value" readonly/></th>
+        <th id="main-total">??</th>
+      </tr>
+      <tr id="sub1">
+        <th>Sub 1</th>
+        <th>
+          <select name="update-substat" id="sub1-select">
+            <option value="void">---</option>
+            <option value="pHP">HP %</option>
+            <option value="fHP">HP +</option>
+            <option value="pATK">Attack %</option>
+            <option value="fATK">Attack +</option>
+            <option value="pDEF">Defence %</option>
+            <option value="fDEF">Defence +</option>
+            <option value="pREC">Recovery %</option>
+            <option value="fREC">Recovery +</option>
+            <option value="bCD">Crit. Damage</option>
+            <option value="bCR">Crit. Rate</option>
+            <option value="bRES">Resist</option>
+            <option disabled value="bCRE">Crit. Resist</option>            
+          </select>
+        </th>
+        <th><input name="update-substat" type="number" id="sub1-value" placeholder="value" /></th>
+        <th id="sub1-total">??</th>
+      </tr>
+      <tr id="sub2">
+        <th>Sub 2</th>
+        <th>
+          <select name="update-substat" id="sub2-select">
+            <option value="void">---</option>
+            <option value="pHP">HP %</option>
+            <option value="fHP">HP +</option>
+            <option value="pATK">Attack %</option>
+            <option value="fATK">Attack +</option>
+            <option value="pDEF">Defence %</option>
+            <option value="fDEF">Defence +</option>
+            <option value="pREC">Recovery %</option>
+            <option value="fREC">Recovery +</option>
+            <option value="bCD">Crit. Damage</option>
+            <option value="bCR">Crit. Rate</option>
+            <option value="bRES">Resist</option>
+            <option disabled value="bCRE">Crit. Resist</option>  
+          </select>
+        </th>
+        <th><input name="update-substat" type="number" id="sub2-value" placeholder="value" /></th>
+        <th id="sub2-total">??</th>
+      </tr>
+      <tr id="sub3">
+        <th>Sub 3</th>
+        <th>
+          <select name="update-substat" id="sub3-select">
+            <option value="void">---</option>
+            <option value="pHP">HP %</option>
+            <option value="fHP">HP +</option>
+            <option value="pATK">Attack %</option>
+            <option value="fATK">Attack +</option>
+            <option value="pDEF">Defence %</option>
+            <option value="fDEF">Defence +</option>
+            <option value="pREC">Recovery %</option>
+            <option value="fREC">Recovery +</option>
+            <option value="bCD">Crit. Damage</option>
+            <option value="bCR">Crit. Rate</option>
+            <option value="bRES">Resist</option>
+            <option disabled value="bCRE">Crit. Resist</option>  
+          </select>
+        </th>
+        <th><input name="update-substat" type="number" id="sub3-value" placeholder="value" /></th>
+        <th id="sub3-total">??</th>
+      </tr>
+      <tr id="sub4">
+        <th>Sub 4</th>
+        <th>
+          <select name="update-substat" id="sub4-select">
+            <option value="void">---</option>
+            <option value="pHP">HP %</option>
+            <option value="fHP">HP +</option>
+            <option value="pATK">Attack %</option>
+            <option value="fATK">Attack +</option>
+            <option value="pDEF">Defence %</option>
+            <option value="fDEF">Defence +</option>
+            <option value="pREC">Recovery %</option>
+            <option value="fREC">Recovery +</option>
+            <option value="bCD">Crit. Damage</option>
+            <option value="bCR">Crit. Rate</option>
+            <option value="bRES">Resist</option>
+            <option disabled value="bCRE">Crit. Resist</option>  
+          </select>
+        </th>
+        <th><input name="update-substat" type="number" id="sub4-value" placeholder="value" /></th>
+        <th id="sub4-total">??</th>
+      </tr>
+      <tr>
+        <th colspan="3"><button onclick="closeSlot()">Finish Editing</button>
+        </th>
+      </tr>
+    </table>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+{
+  "2021" : {
+    "January" : {
+          "astromon" : "Scheherazade",
+          "status" : "(Old)"
+    },
+    "February" : {
+          "astromon" : "---",
+          "status" : ""
+    },
+    "March" : {
+          "astromon" : "Shino",
+          "status" : "(Old)"
+    },
+    "April" : {
+          "astromon" : "Jeon Woochi",
+          "status" : "(Old)"
+    },
+    "May" : {
+          "astromon" : "Jormungandr",
+          "status" : "(Old)"
+    },
+    "June" : {
+          "astromon" : "Aesir",
+          "status" : "(Old)"
+    },
+    "July" : {
+          "astromon" : "Gilgamesh",
+          "status" : "(Old)"
+    },
+    "August" : {
+          "astromon" : "Scheherazade",
+          "status" : "(Old)"
+    },
+    "September" : {
+          "astromon" : "Jeon Woochi",
+          "status" : "(Old)"
+    },
+    "October" : {
+          "astromon" : "Persephone",
+          "status" : "(Old)"
+    },
+    "November" : {
+          "astromon" : "Aesir",
+          "status" : "(Old)"
+    },
+    "December" : {
+          "astromon" : "Jormungandr",
+          "status" : "(Old)"
+    }    
+  },
+  "2022" : {
+    "January" : {
+          "astromon" : "Gilgamesh",
+          "status" : "(Old)"
+    },
+    "February" : {
+          "astromon" : "Glinda",
+          "status" : "(Old)"
+    },
+    "March" : {
+          "astromon" : "Jeon Woochi",
+          "status" : "(Old)"
+    },
+    "April" : {
+          "astromon" : "Aesir",
+          "status" : "(Old)"
+    },
+    "May" : {
+          "astromon" : "Scheherazade",
+          "status" : "(Old)"
+    },
+    "June" : {
+          "astromon" : "Midsummer Miho",
+          "status" : "& Jormungandr"
+    },
+    "July" : {
+          "astromon" : "Persephone",
+          "status" : ""
+    },
+    "August" : {
+          "astromon" : "Okeanos",
+          "status" : ""
+    },
+    "September" : {
+          "astromon" : "Shino",
+          "status" : ""
+    },
+    "October" : {
+          "astromon" : "Nightmare",
+          "status" : ""
+    },
+    "November" : {
+          "astromon" : "Sariel",
+          "status" : ""
+    },
+    "December" : {
+          "astromon" : "Glinda",
+          "status" : ""
+    }    
+  },
+  "2023" : {
+    "January" : {
+          "astromon" : "Jeon Woochi",
+          "status" : ""
+    },
+    "February" : {
+          "astromon" : "Garuda",
+          "status" : ""
+    },
+    "March" : {
+          "astromon" : "Okeanos",
+          "status" : ""
+    },
+    "April" : {
+          "astromon" : "Gilgamesh",
+          "status" : ""
+    },
+    "May" : {
+          "astromon" : "Enkidu",
+          "status" : ""
+    },
+    "June" : {
+          "astromon" : "Beach Muse Seiren",
+          "status" : ""
+    },
+    "July" : {
+          "astromon" : "Midsummer Miho",
+          "status" : ""
+    },
+    "August" : {
+          "astromon" : "Shino",
+          "status" : "& Scheherazade"
+    },
+    "September" : {
+          "astromon" : "",
+          "status" : ""
+    },
+    "October" : {
+          "astromon" : "",
+          "status" : ""
+    },
+    "November" : {
+          "astromon" : "",
+          "status" : ""
+    },
+    "December" : {
+          "astromon" : "",
+          "status" : ""
+    }    
+  },
+  "thanks" : "Thanks to The Mighty Duck for making this list!"
+}
